@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
 
         // Successful validation, respond with an HTML message
         $content = '<div class="form-body" >
-            <div class="success-show"><h1>Form successfully submitted. 🎉</h1><div class="result"><h3>You sent:</h3><p>' . $firstName . ' ' . $lastName . '</p></div></div>
+            <div class="success-show"><h1>Form successfully submitted. 🎉</h1><div class="result"><h3>You sent:</h3><p>' . $firstName . ' (First Name) ' . $lastName . ' (Last Name)</p></div></div>
         </div>';
     } else {
         // Validation fail
