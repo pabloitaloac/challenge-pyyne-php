@@ -51,6 +51,8 @@ class Form {
 
         .form-body{
             display:flex;
+            max-width: 600px;
+            margin: auto;
             flex-direction:column;
             border:1px solid green;
             border-radius:10px;
