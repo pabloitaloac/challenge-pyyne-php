@@ -9,7 +9,4 @@ class TextInput extends Input {
         echo '<input type="text" name="'.$this->_name.'" value="'.$this->_initVal.'"  class="single-input" >';
     }
 }
-
-
-
 ?>

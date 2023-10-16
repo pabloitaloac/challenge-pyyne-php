@@ -1,5 +1,4 @@
 <?php
-
 include('base.html');
 
 require 'Form.php';
@@ -37,8 +36,5 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
 echo '<script>';
 echo 'document.getElementById("content").innerHTML = ' . json_encode($content) . ';';
 echo '</script>';
-
-
-
 
 ?>

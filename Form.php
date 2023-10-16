@@ -1,6 +1,5 @@
 <?php
 class Form {
-
     private $_inputs = [];
 
     public function __construct() {
@@ -44,9 +43,4 @@ class Form {
 
 
 }
-
-
-
-
-
 ?>
