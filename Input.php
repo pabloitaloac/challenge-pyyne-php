@@ -30,3 +30,7 @@ abstract class Input {
         return $this->_initVal;
     }
 }
+
+
+
+?>
