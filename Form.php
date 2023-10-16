@@ -1,7 +1,7 @@
 <?php
 class Form {
 
-    protected $_inputs;
+    private $_inputs = [];
 
     public function __construct() {
         $this->_inputs = array();
@@ -11,15 +11,15 @@ class Form {
         $this->_inputs[] = $input;
     }
 
-    public function validate() {
+    public function validate(array $postData) {
         foreach ($this->_inputs as $input) {
-            if (empty($_POST[$input->name()])) {
+            if (empty($postData[$input->name()])) {
                 return false;
             }
         }
         return true;
     }
-            
+                
     public function getValue($name) {
         if (isset($_POST[$name])) {
             return $_POST[$name];

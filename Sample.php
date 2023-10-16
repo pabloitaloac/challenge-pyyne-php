@@ -13,8 +13,9 @@ $form->addInput(new TextInput("lastname", "Last Name:", "Wayne"));
 $content = '';
 
 if ($_SERVER['REQUEST_METHOD']=="POST") {
+    $postData = $_POST;
     // Form sent
-    if ($form->validate()) {
+    if ($form->validate($postData)) {
         $firstName = $form->getValue("firstname");
         $lastName = $form->getValue("lastname");
 

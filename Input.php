@@ -4,10 +4,9 @@ abstract class Input {
     protected $_label;
     protected $_initVal;
 
-    abstract public function validate();
     abstract protected function _renderSetting();
 
-    public function __construct($name, $label, $initVal) {
+    public function __construct(string $name, string $label, string $initVal) {
         $this->_name = $name;
         $this->_label = $label;
         $this->_initVal = $initVal;
